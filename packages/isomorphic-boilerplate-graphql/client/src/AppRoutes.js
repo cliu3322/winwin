@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Profile from './containers/Profile/Profile';
+import Dashboard from './containers/Dashboard';
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact={true} path="/">
-          <Profile />
+          <Dashboard />
         </Route>
       </Switch>
     </BrowserRouter>

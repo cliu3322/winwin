@@ -1,3 +1,4 @@
+require('./websocket.js');
 const cors = require('micro-cors')();
 const { ApolloServer } = require('apollo-server-micro');
 const typeDefs = require('./schema');

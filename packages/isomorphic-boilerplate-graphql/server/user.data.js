@@ -9,7 +9,7 @@ module.exports = {
   posts: [
     {
       id: 1,
-      type: 'image',
+      type: 'chart',
       thumb_url:
         'http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/post_1.png',
       numberOflike: '21',
@@ -81,7 +81,7 @@ module.exports = {
       type: 'video',
       thumb_url:
         'http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/post_3.png',
-      video: `<iframe src="https://player.vimeo.com/video/359281775?color=d4d4d4&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`,
+      video: `<iframe src="https://www.youtube.com/embed/6-pHqQcQfXE" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`,
       numberOfView: '134',
       numberOflike: '47',
       numberOfcomment: '48',
@@ -246,7 +246,8 @@ module.exports = {
       type: 'video',
       thumb_url:
         'http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/post_8.png',
-      video: `<iframe src="https://player.vimeo.com/video/35396305?color=d4d4d4&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`,
+      video:
+        '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@scout2015/video/6718335390845095173" data-video-id="6718335390845095173" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@scout2015" href="https://www.tiktok.com/@scout2015">@scout2015</a> <p>Scramble up ur name & I’ll try to guess it😍❤️ <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage">#foryoupage</a> <a title="petsoftiktok" target="_blank" href="https://www.tiktok.com/tag/petsoftiktok">#petsoftiktok</a> <a title="aesthetic" target="_blank" href="https://www.tiktok.com/tag/aesthetic">#aesthetic</a></p> <a target="_blank" title="♬ original sound - 𝐇𝐚𝐰𝐚𝐢𝐢𓆉" href="https://www.tiktok.com/music/original-sound-6689804660171082501">♬ original sound - 𝐇𝐚𝐰𝐚𝐢𝐢𓆉</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
       numberOfView: '134',
       numberOflike: '47',
       numberOfcomment: '48',
