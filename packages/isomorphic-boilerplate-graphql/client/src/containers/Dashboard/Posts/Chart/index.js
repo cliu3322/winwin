@@ -6,6 +6,14 @@ let ws;
 export default function Chart() {
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
+  const [data, setDataCount] = useState(null);
+
+  useEffect(() => {
+    return function cleanup() {
+      console.log('disconnected', ws);
+      ws.close();
+    };
+  }, []);
 
   useEffect(() => {
     ws = new WebSocket('ws://localhost:3030');
@@ -15,20 +23,21 @@ export default function Chart() {
     };
 
     ws.onmessage = evt => {
-      // on receiving a message, add it to the list of messages
-      console.log(JSON.parse(evt.data));
-    };
+      let ticks = JSON.parse(evt.data);
 
-    return function cleanup() {
-      console.log('disconnected', ws);
-      ws.close();
+      setDataCount(ticks.data);
     };
-  });
+  }, []);
 
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <MyD3Component data={[1, 2, 3]} />
+      {!data && (
+        <p>
+          Retriving data, please wait <br />
+        </p>
+      )}
+      <p>The curren price is {data ? data.price : 0} USD</p>
+      <MyD3Component data={data} />
     </div>
   );
 }

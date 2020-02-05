@@ -11,7 +11,7 @@ module.exports = {
       id: 1,
       type: 'chart',
       thumb_url:
-        'http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/post_1.png',
+        'https://admin.bitcoinmagazine.com/wp-content/uploads/2019/06/Bitstamp_101.width-800-722x401.jpg',
       numberOflike: '21',
       numberOfcomment: '8',
       comments: [
@@ -80,7 +80,7 @@ module.exports = {
       id: 3,
       type: 'video',
       thumb_url:
-        'http://s3.amazonaws.com/redqteam.com/isomorphic-reloaded-image/post_3.png',
+        'https://technostalls.com/wp-content/uploads/2017/09/YouTube-Live-Streaming-640x336.jpg',
       video: `<iframe src="https://www.youtube.com/embed/6-pHqQcQfXE" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`,
       numberOfView: '134',
       numberOflike: '47',
