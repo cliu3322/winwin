@@ -1,3 +1,5 @@
+//https://github.com/keemor/react-graphql-full-stack/blob/master/server/server.js
+
 require('./websocket.js');
 const cors = require('micro-cors')();
 const { ApolloServer } = require('apollo-server-micro');
